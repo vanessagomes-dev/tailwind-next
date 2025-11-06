@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen grid grid-cols-app">
+        <div className="grid min-h-screen grid-cols-app">
           <aside className="border-r border-zinc-200 px-5 py-8">sidebar</aside>
           <main className="px-4 pb-12 pt-8">{children}</main>
         </div>

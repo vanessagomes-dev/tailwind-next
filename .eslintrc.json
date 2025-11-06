@@ -1,7 +1,4 @@
 {
   "root": true,
-  "extends": [
-    "@rocketseat/eslint-config/next",
-    "plugin:prettier/recommended"
-  ]
+  "extends": ["@rocketseat/eslint-config/next", "plugin:prettier/recommended"]
 }
