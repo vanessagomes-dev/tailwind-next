@@ -83,7 +83,7 @@ export default function Home() {
             </Input.Root>
           </div>
 
-          {/* PHOTO (CORRIGIDO: SOMENTE FileInput) */}
+          {/* PHOTO  */}
           <div className="grid-cols-form grid gap-3 pt-5">
             <label
               htmlFor="photo"
@@ -97,11 +97,8 @@ export default function Home() {
 
             <FileInput.Root className="flex items-start gap-5">
               <FileInput.ImagePreview />
-
-              <div className="flex flex-1">
-                <FileInput.Trigger />
-                <FileInput.Control />
-              </div>
+              <FileInput.Trigger />
+              <FileInput.Control />
             </FileInput.Root>
           </div>
 
@@ -160,8 +157,6 @@ export default function Home() {
                 Share a few snippets of your work.
               </span>
             </label>
-
-            <div />
 
             <FileInput.Root>
               <FileInput.Trigger />
