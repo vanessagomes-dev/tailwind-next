@@ -1,8 +1,10 @@
-import { LogOut } from "lucide-react";
+import { Button } from "../Button"
+import { LogOut } from "lucide-react"
 
 export function Profile() {
   return (
     <div className="flex items-center gap-3">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="https://github.com/vanessagomes-dev.png"
         className="h-10 w-10 rounded-full"
@@ -12,11 +14,13 @@ export function Profile() {
         <span className="text-sm font-semibold text-zinc-700">
           Vanessa Gomes
         </span>
-        <span className="truncate text-sm text-zinc-500">vanessagomesdev@gmail.com</span>
+        <span className="truncate text-sm text-zinc-500">
+          vanessagomesdev@gmail.com
+        </span>
       </div>
-      <button type="button" className="ml-auto p-2 rounded-md hover:bg-zinc-50">
-        <LogOut className="w-5 h-5 text-zinc-500" />
-      </button>
+      <Button type="button" variant="ghost">
+        <LogOut className="h-5 w-5 text-zinc-500" />
+      </Button>
     </div>
   )
 }
